@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt">
+    <title>Kontakt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Pasek nawigacyjny -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">O Nas</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="realizacje.html">Realizacje</a></li>
+            <li><a href="aktualnosci.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Zawartość główna -->
+    <main>
+        <div class="content-wrapper fade-in">
+            <div class="text-container">
+                <!-- Mapa Google -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d576.1416852589762!2d20.800859404923308!3d52.26874611455748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spl!2spl!4v1730382063092!5m2!1spl!2spl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Kontener dla formularza kontaktowego -->
+                <div class="form-container">
+                    <div class="contact-header">
+                        <h2>Skontaktuj się z nami przez formularz lub kliknij w link poniżej :) </h2>
+                        <p><a href="mailto:biuro@codewavesolutions.pl">biuro@codewavesolutions.pl
+                            </a></p>
+                    </div>
+                    <form class="contact-form" action="https://formspree.io/f/xanyeedk" method="POST">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Adres e-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Wiadomość:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024. Wszelkie prawa zastrzeżone.</p>
+        <div class="visit-counter">
+            <p>Odwiedzono nas:</p>
+            <img src="https://hitwebcounter.com/counter/counter.php?page=17151948&style=0003&nbdigits=5&type=ip&initCount=0"
+                title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
