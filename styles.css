@@ -229,29 +229,29 @@ footer {
 	margin: 0 auto; /* Wypośrodkowanie kontenera */
 	display: flex;
 	flex-direction: column;
-	align-items: center; /* Wypośrodkowanie tekstu i przycisku w formularzu */
+	align-items: center;
 }
 
 /* Nagłówek kontaktowy */
 .contact-header {
 	text-align: center;
-	color: #ffffff; /* Biały kolor tekstu */
+	color: #ffffff;
 	margin-bottom: 20px;
 }
 
 .contact-header h2 {
 	font-size: 24px;
-	color: #ffffff; /* Biały kolor dla nagłówka */
+	color: #ffffff;
 }
 
 .contact-header a {
-	color: #ffffff; /* Biały kolor dla linku e-mail */
+	color: #ffffff;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
 .contact-header a:hover {
-	color: #cccccc; /* Zmiana koloru na jasnoszary przy najechaniu */
+	color: #cccccc;
 }
 
 /* Stylizacja formularza */
@@ -274,7 +274,8 @@ footer {
 	border-radius: 5px;
 	font-family: 'Montserrat', sans-serif;
 	background: #fff;
-	width: 100%; /* Pola formularza zajmują pełną szerokość kontenera */
+	width: 100%; /* Pełna szerokość dla pól formularza */
+	box-sizing: border-box; /* Uwzględnia padding i border w szerokości */
 }
 
 .contact-form button {
@@ -287,6 +288,7 @@ footer {
 	font-weight: bold;
 	transition: background-color 0.3s ease;
 	width: 100%; /* Przycisk zajmuje pełną szerokość kontenera */
+	box-sizing: border-box; /* Uwzględnia padding w szerokości */
 }
 
 .contact-form button:hover {
