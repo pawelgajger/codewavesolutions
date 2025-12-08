@@ -2,79 +2,171 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Podłączony plik CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tworzenie stron internetowych | CodeWave Solutions</title>
+  <meta name="description"
+    content="Profesjonalne projektowanie stron internetowych i marketing online. Zbuduj swoją obecność w sieci z CodeWave Solutions!">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="canonical" href="https://codewavesolutions.pro/" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Code Wave Solutions",
+      "image": "https://codewavesolutions.pro/images/logo.png",
+      "telephone": "+48 501 169 449",
+      "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "postalCode": "01-461" }
+    }
+  </script>
 </head>
 
 <body>
 
-    <!-- Pasek nawigacyjny -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">O Nas</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="realizacje.html">Realizacje</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="onas.html">Dlaczego my?</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-    <!-- Zawartość główna -->
-    <main>
-        <div class="content-wrapper fade-in">
-            <div class="image-container">
-                <img src="images/picture2.jpg" alt="Przykładowe zdjęcie">
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Tworzymy Twój sukces <br><span>w Internecie</span></h1>
+          <p>Specjalizujemy się w projektowaniu nowoczesnych stron WWW, sklepów online i portali. Marketing, SEO i
+            design, które wyróżnią Twoją firmę.</p>
+          <div class="hero-btns">
+            <a href="kontakt.html" class="btn btn-primary">Wycena projektu</a>
+            <a href="#features" class="btn btn-outline">Zobacz ofertę</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/mainpage2.webp" alt="Projektowanie stron Warszawa">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2>Dlaczego CodeWave?</h2>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <i class="fas fa-check-circle"></i>
+            <h3>Szybka realizacja</h3>
+            <p>Strony internetowe i sklepy gotowe już w ciągu kilku dni roboczych.</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Indywidualny Design</h3>
+            <p>Projekty graficzne dopasowane do Twoich potrzeb lub modyfikacje gotowych szablonów.</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Nowoczesne technologie</h3>
+            <p>Gwarantujemy zgodność z najnowszymi standardami (HTML5, CSS3, RWD).</p>
+          </div>
+
+          <div class="feature-card">
+            <i class="fas fa-life-ring"></i>
+            <h3>Wsparcie techniczne</h3>
+            <p>Pomoc na każdym etapie realizacji i rozwoju projektu po wdrożeniu.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 10px;">Wybrane Realizacje</h2>
+        <p style="text-align: center; margin-bottom: 50px;">Zobacz, jakie projekty tworzymy dla naszych klientów.</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja1.png" alt="MatCars">
+            <div class="project-overlay">
+              <span class="project-category">Strona Firmowa</span>
+              <h3 class="project-title">MatCars Serwis</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
             </div>
-            <div class="text-container">
-                <h2>Strony internetowe, Budowanie marki, Marketing, Wsparcie IT!</h2>
-                <p>Zbuduj swoją markę w sieci z pomocą doświadczonych specjalistów. Oferujemy kompleksowe usługi, które
-                    pozwolą Ci wyróżnić się na rynku:</p>
-                <ul>
-                    <li><strong>Krótki czas realizacji strony</strong> – strona internetowa "mini" już w 3-5 dni.</li>
-                    <li><strong>Indywidualny projekt graficzny lub gotowy szablon np WordPress</strong> – stwórz
-                        unikalny wizerunek z
-                        niesztampowym projektem graficznym lub wybierz gotowy szablon dostosowany do Twoich potrzeb.
-                    </li>
-                    <li><strong>Profesjonalne rozwiązania techniczne</strong> – serwis zgodny z najnowszymi standardami
-                        sieciowymi.</li>
-                    <li><strong>Doświadczenie</strong> – projektujemy strony internetowe i aplikacje od
-                        kilku lat, gwarantując wysoką jakość i trwałość rozwiązań.</li>
-                    <li><strong>Satysfakcja klienta</strong> – podchodzimy do każdego projektu z zaangażowaniem i
-                        precyzją, dbając o pełne zadowolenie naszych klientów.</li>
-                    <li><strong>Pomoc i wsparcie</strong> – służymy pomocą techniczną i informatyczną na każdym etapie
-                        realizacji projektu.</li>
-                </ul>
-                <p><strong>Nasze usługi obejmują:</strong></p>
-                <ul>
-                    <li><strong>Projektowanie:</strong> strony WWW, sklepy internetowe, aplikacje.</li>
-                    <li><strong>Budowanie marki:</strong> logo, wizytówki, ulotki, filmy reklamowe i projekty graficzne.
-                    </li>
-                    <li><strong>Marketing:</strong> SEO, kampanie Google Ads, Social Media, Google Analytics, Google
-                        Moja Firma.</li>
-                </ul>
-                <p>Z nami stworzysz profesjonalny wizerunek online i zwiększysz widoczność swojej firmy. Skontaktuj się
-                    i rozpocznij współpracę już dziś!</p>
+          </div>
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja2.png" alt="Akademia Malucha">
+            <div class="project-overlay">
+              <span class="project-category">Edukacja</span>
+              <h3 class="project-title">Akademia Malucha</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
             </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja3.png" alt="DK Serwis">
+            <div class="project-overlay">
+              <span class="project-category">Strona One-Page</span>
+              <h3 class="project-title">DK Serwis</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja4.png" alt="Launching Soon">
+            <div class="project-overlay">
+              <span class="project-category">Landing Page</span>
+              <h3 class="project-title">Start-up Tech</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja5.png" alt="Piekarnia">
+            <div class="project-overlay">
+              <span class="project-category">Gastronomia</span>
+              <h3 class="project-title">Świat Smaku</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/realizacje/realizacja6.png" alt="Księgowość">
+            <div class="project-overlay">
+              <span class="project-category">Finanse</span>
+              <h3 class="project-title">NovaKsięgowość</h3>
+              <!-- <span class="btn-small">Zobacz szczegóły</span> -->
+            </div>
+          </div>
+
         </div>
-        </div>
-    </main>
+      </div>
+    </section>
 
-    <!-- Stopka -->
-    <footer>
-        <p>&copy; 2024. Wszelkie prawa zastrzeżone.</p>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Gotowy na rozwój biznesu?</h2>
+        <p>Skontaktuj się z nami i zacznij współpracę już dziś!</p>
+        <a href="kontakt.html" class="btn btn-primary">Skontaktuj się z nami</a>
+      </div>
+    </section>
 
-        <div class="visit-counter">
-            <p>Odwiedzono nas:</p>
-            <img src="https://hitwebcounter.com/counter/counter.php?page=17151948&style=0003&nbdigits=5&type=ip&initCount=0"
-                title="Counter Widget" Alt="Visit counter For Websites" border="0" />
-        </div>
-    </footer>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 CodeWave Solutions. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>

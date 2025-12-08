@@ -2,74 +2,69 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kontakt">
-    <title>Kontakt</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | CodeWave Solutions</title>
+  <meta name="description" content="Skontaktuj się z nami! Telefon, e-mail i adres w Warszawie.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://codewavesolutions.pro/kontakt.html" />
+  <script type="application/ld+json">
+     { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "Code Wave Solutions" }
+  </script>
 </head>
 
 <body>
 
-    <!-- Pasek nawigacyjny -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">O Nas</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="realizacje.html">Realizacje</a></li>
-            <li><a href="aktualnosci.html">Kontakt</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="onas.html">Dlaczego my?</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-    <!-- Zawartość główna -->
-    <main>
-        <div class="content-wrapper fade-in">
-            <div class="text-container">
-                <!-- Mapa Google -->
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.068867588865!2d20.921331177612288!3d52.242132756763496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb1b373276f1%3A0x69f5a4d7f9936902!2sGrodkowska%206%2C%2001-461%20Warszawa!5e0!3m2!1spl!2spl!4v1730468095300!5m2!1spl!2spl"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+  <main>
+    <section class="section">
+      <div class="container" style="text-align: center;">
+        <h1>Skontaktuj się z nami</h1>
+        <p>Jesteśmy do Twojej dyspozycji. Wybierz dogodną formę kontaktu i rozwiń swój biznes.</p>
 
-                <!-- Kontener dla formularza kontaktowego -->
-                <div class="form-container">
-                    <div class="contact-header">
-                        <h2>Skontaktuj się z nami przez formularz lub kliknij w link poniżej :) </h2>
-                        <p><a href="mailto:biuro@codewavesolutions.pl">biuro@codewavesolutions.pl
-                            </a></p>
-                    </div>
-                    <form class="contact-form" action="https://formspree.io/f/xanyeedk" method="POST">
-                        <label for="name">Imię:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Adres e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Wiadomość:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-
-                        <button type="submit">Wyślij wiadomość</button>
-                    </form>
-                </div>
-            </div>
+        <div class="contact-buttons-container">
+          <a href="tel:+48501169449" class="btn btn-primary">
+            <i class="fas fa-phone"></i> Zadzwoń: 501 169 449
+          </a>
+          <a href="mailto:kontakt@codewavesolutions.pro" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Napisz e-mail
+          </a>
         </div>
-    </main>
+      </div>
 
-    <!-- Stopka -->
-    <footer>
-        <p>&copy; 2024. Wszelkie prawa zastrzeżone.</p>
-        <div class="visit-counter">
-            <p>Odwiedzono nas:</p>
-            <img src="https://hitwebcounter.com/counter/counter.php?page=17151948&style=0003&nbdigits=5&type=ip&initCount=0"
-                title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+      <div class="container">
+        <div
+          style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 1px solid #333; margin-bottom: 50px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.068867588865!2d20.921331177612288!3d52.242132756763496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb1b373276f1%3A0x69f5a4d7f9936902!2sGrodkowska%206%2C%2001-461%20Warszawa!5e0!3m2!1spl!2spl!4v1730468095300!5m2!1spl!2spl"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="container" style="text-align: center; color: var(--text-muted);">
+        <p><i class="fas fa-map-marker-alt"></i> Grodkowska 6, 01-461 Warszawa</p>
+        <p>Pracujemy od poniedziałku do piątku: 09:00 - 18:00</p>
+      </div>
 
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 CodeWave Solutions. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
