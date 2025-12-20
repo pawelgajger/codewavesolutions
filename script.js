@@ -81,47 +81,29 @@ function scrollAnimation() {
 window.addEventListener('scroll', scrollAnimation)
 
 // Wywołanie animacji po załadowaniu strony
-document.addEventListener(
-	'DOMContentLoaded',
-	scrollAnimation
-)(
-	// Google Analytics
-	function () {
-		const script = document.createElement('script')
-		script.async = true
-		script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y'
-		document.head.appendChild(script)
-
-		window.dataLayer = window.dataLayer || []
-		function gtag() {
-			dataLayer.push(arguments)
-		}
-		gtag('js', new Date())
-		gtag('config', 'UA-XXXXX-Y')
-	}
-)()
+document.addEventListener('DOMContentLoaded', scrollAnimation)
 
 document.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.querySelector('.gallery');
-    const leftBtn = document.querySelector('.left-btn');
-    const rightBtn = document.querySelector('.right-btn');
+	const gallery = document.querySelector('.gallery')
+	const leftBtn = document.querySelector('.left-btn')
+	const rightBtn = document.querySelector('.right-btn')
 
-    let currentIndex = 0; // Indeks pierwszego widocznego zdjęcia
-    const totalImages = gallery.children.length; // Liczba wszystkich zdjęć
-    const visibleImages = Math.floor(gallery.parentElement.offsetWidth / gallery.children[0].offsetWidth); // Liczba widocznych zdjęć
-    const imageWidth = gallery.children[0].offsetWidth + parseInt(getComputedStyle(gallery.children[0]).marginRight) * 2;
+	let currentIndex = 0 // Indeks pierwszego widocznego zdjęcia
+	const totalImages = gallery.children.length // Liczba wszystkich zdjęć
+	const visibleImages = Math.floor(gallery.parentElement.offsetWidth / gallery.children[0].offsetWidth) // Liczba widocznych zdjęć
+	const imageWidth = gallery.children[0].offsetWidth + parseInt(getComputedStyle(gallery.children[0]).marginRight) * 2
 
-    leftBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            gallery.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-        }
-    });
+	leftBtn.addEventListener('click', () => {
+		if (currentIndex > 0) {
+			currentIndex--
+			gallery.style.transform = `translateX(-${currentIndex * imageWidth}px)`
+		}
+	})
 
-    rightBtn.addEventListener('click', () => {
-        if (currentIndex < totalImages - visibleImages) {
-            currentIndex++;
-            gallery.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-        }
-    });
-});
+	rightBtn.addEventListener('click', () => {
+		if (currentIndex < totalImages - visibleImages) {
+			currentIndex++
+			gallery.style.transform = `translateX(-${currentIndex * imageWidth}px)`
+		}
+	})
+})
